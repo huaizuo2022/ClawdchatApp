@@ -1,4 +1,4 @@
-# clawdchat 插件安装指南
+# LumaChat 插件安装指南
 
 仅保留插件安装相关说明。
 
@@ -19,11 +19,11 @@ pnpm -v
 
 1) 安装或升级插件
 ```bash
-pnpm openclaw plugins install @clawdchat/clawdchat@0.1.5
+pnpm openclaw plugins install @lumachat/lumachat@0.15.0
 ```
 如提示插件已存在（例如 `plugin already exists`），先执行更新：
 ```bash
-pnpm openclaw plugins update clawdchat
+pnpm openclaw plugins update lumachat
 ```
 
 2) 重启网关（确保新版本生效）
@@ -36,16 +36,16 @@ pnpm openclaw gateway restart
 pnpm openclaw plugins list
 pnpm openclaw channels list
 ```
-若未看到 `clawdchat`，执行诊断：
+若未看到 `lumachat`，执行诊断：
 ```bash
 pnpm openclaw plugins doctor
 ```
 
 4) 登录并获取配对码与安全码
 ```bash
-pnpm openclaw channels login --channel clawdchat
+pnpm openclaw channels login --channel lumachat
 ```
 终端会输出 6 位配对码 + 6 位安全码（有效期 10 分钟）。
 
 5) 在 App 内完成配对
-在 Clawdchat App 的 `Settings -> Clawdbot 配对` 中先登录账号，再输入配对码和安全码确认。若提示未连接，请重新生成配对码后再试。
+在 LumaChat App 的 `Settings -> Clawdbot 配对` 中先登录账号，再输入配对码和安全码确认。若提示未连接，请重新生成配对码后再试。
