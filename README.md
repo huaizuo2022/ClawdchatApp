@@ -19,7 +19,7 @@ pnpm -v
 
 1) 安装或升级插件
 ```bash
-pnpm openclaw plugins install @clawdchat/clawdchat@0.1.4
+pnpm openclaw plugins install @clawdchat/clawdchat@0.1.5
 ```
 如提示插件已存在（例如 `plugin already exists`），先执行更新：
 ```bash
@@ -41,11 +41,11 @@ pnpm openclaw channels list
 pnpm openclaw plugins doctor
 ```
 
-4) 登录并获取配对码
+4) 登录并获取配对码与安全码
 ```bash
 pnpm openclaw channels login --channel clawdchat
 ```
-终端会输出 6 位配对码（有效期 10 分钟）。
+终端会输出 6 位配对码 + 6 位安全码（有效期 10 分钟）。
 
 5) 在 App 内完成配对
-在 Clawdchat App 的 `Settings -> Clawdbot 配对` 中输入配对码并确认。若提示未连接，请重新生成配对码后再试。
+在 Clawdchat App 的 `Settings -> Clawdbot 配对` 中先登录账号，再输入配对码和安全码确认。若提示未连接，请重新生成配对码后再试。
