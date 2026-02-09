@@ -28,22 +28,22 @@ pnpm openclaw plugins update clawdchat
 
 2) 重启网关（确保新版本生效）
 ```bash
-openclaw gateway restart
+pnpm openclaw gateway restart
 ```
 
 3) 验证插件与频道
 ```bash
-openclaw plugins list
-openclaw channels list
+pnpm openclaw plugins list
+pnpm openclaw channels list
 ```
 若未看到 `clawdchat`，执行诊断：
 ```bash
-openclaw plugins doctor
+pnpm openclaw plugins doctor
 ```
 
 4) 登录并获取配对码
 ```bash
-openclaw channels login --channel clawdchat
+pnpm openclaw channels login --channel clawdchat
 ```
 终端会输出 6 位配对码（有效期 10 分钟）。
 
