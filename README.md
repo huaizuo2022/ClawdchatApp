@@ -40,3 +40,12 @@ openclaw channels list
 ```bash
 openclaw plugins doctor
 ```
+
+4) 登录并获取配对码
+```bash
+openclaw channels login --channel clawdchat
+```
+终端会输出 6 位配对码（有效期 10 分钟）。
+
+5) 在 App 内完成配对
+在 Clawdchat App 的 `Settings -> Clawdbot 配对` 中输入配对码并确认。若提示未连接，请重新生成配对码后再试。
